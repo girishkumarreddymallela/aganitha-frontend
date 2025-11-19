@@ -1,7 +1,12 @@
+import { RouterProvider } from 'react-router-dom';
+import { router } from './router';
+import { Toaster } from 'sonner';
+
 export default function APP() {
   return (
     <>
-      <h1 className='text-6xl'>Hola Girish</h1>
+      <RouterProvider router={router} />
+      <Toaster position="top-right" richColors />
     </>
   );
 }
